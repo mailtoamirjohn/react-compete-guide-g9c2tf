@@ -1,23 +1,14 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import Hello from './Hello';
 import './style.css';
+import Person from './Person/Person'
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      name: 'React'
-    };
-  }
-
   render() {
     return (
       <div>
-        <Hello name={this.state.name} />
-        <p>
-          Start to see some magic happen :)
-        </p>
+        <h1> Hello React</h1>
+        <Person />
       </div>
     );
   }
